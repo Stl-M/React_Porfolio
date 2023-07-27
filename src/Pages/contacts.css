@@ -1,0 +1,62 @@
+.contact {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    height: 400px;
+    margin: 20px 300px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    background-color: #fbe9d7;
+    box-shadow: 1px 5px 6px rgba(0, 0, 0, 0.5);
+    border-radius: 16px;
+    
+}
+.kard h2, p{
+    padding: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .contact {
+    background: hsl(298, 68%, 90%);
+    position: relative;
+    z-index: 3;
+    max-width: 600px;
+    max-height: 850px;
+    margin: 50px auto;
+    padding: 50px 30px 44px;
+    border-radius: 1.25rem;
+    place-items: center;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    perspective: 200;
+}
+
+h3 {
+    font-size: 36px;
+    font-weight: 600;
+    margin: 0 0 12px;
+} */

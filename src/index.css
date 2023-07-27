@@ -1,13 +1,278 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Michroma&family=Montserrat&family=Roboto&family=Ubuntu&display=swap');
+
+*{
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+}
+body {
+  box-sizing: border-box;
+  background-color: aliceblue;
+  font-family: 'Montserrat';
+  align-items: center;
+  text-align: center;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+button {
+  border: 0;
+  padding: 8px;
+  border-radius: 4px;
+  color: #e76268;
+  cursor: pointer;
 }
+
+/* header {
+  align-items: center;
+  text-align: center;  
+}
+header nav {
+  display: flex;
+  text-align: center;
+  gap: 16px;
+  justify-content: flex-end;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+header nav h1 {
+  margin-right: auto;
+  border-bottom: 3px solid #e76268;
+  font-family: 'Ubuntu' ;
+  font-weight: 800;
+  font-size: 30px;
+  color: #013237;
+}
+header nav a{
+  text-decoration: none;
+  padding: 6px auto;  
+  border-radius: 1px;
+  color: #013237;
+  align-items: center;
+  font-family: 'ubuntu';
+  font-size: 1.5em;
+}
+header nav a.active {
+  border-bottom: 3px solid #e76268;
+} 
+ */
+
+main {
+  max-width: 1000px;
+  
+  margin: 20px auto;
+  color: #013237;
+ 
+}
+.mern-layout {
+  background-color: #f1f1f1;
+  padding: 20px 20px;
+  overflow: scroll;  
+}
+.mern-layout h2 {
+  color: #013237;
+  font-family: 'Ubuntu';
+}
+.mern-layout p {
+  text-align: center;
+  color: #013237;
+  font-family: 'Montserrat';
+
+}
+
+.about {
+  background-color: #feada6;
+  border-radius: 25px 25px 25px 25px;
+  padding: 40px 40px;
+  box-shadow: 1px 5px 6px rgba(0, 0, 0, 0.5);
+  
+}
+.cv {
+  background-color: transparent;
+  gap: 1rem ;
+}
+.down {
+  width: 30px;
+  height: 30px;
+}
+.about h3 {
+  font-family: 'Montserrat';
+  font-size: 400;
+}
+
+.about p{
+  font-family: 'Montserrat';
+}
+
+/* .mern-layout {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  margin: 20px 300px;
+  flex-direction: column;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  background-color: #feada6;
+  box-shadow: 1px 5px 6px rgba(0, 0, 0, 0.5);
+  border-radius: 16px;
+  
+} */
+.accordion-container{
+  max-width: 800px;
+  margin: 30px auto;
+  z-index: 2;
+  height: fit-content;
+}
+.accordion-container label {
+  display: block;
+  position: relative;
+  font-family: 'Roboto', sans-serif;
+  /* font-size: 16px; */
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #333;
+  cursor: pointer;
+  background:  #feada6;
+  transition: all 0.3s ease;
+}
+.accordion-container label:hover {
+  background-color: #FF90BB;
+}
+.accordion-container input {
+  display: none;
+}
+
+.accordion-inner {
+  display: block;
+  height: 0px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 13px;
+  text-align: left;
+  padding: 0px 15px;
+  background: #feada6;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  
+  
+}
+.accordion-container input:checked ~ .accordion-inner {
+  height: 200px;
+  padding: 5px 5px;
+  /* overflow: scroll; */
+}
+.accordion-container input[type=checkbox] + label::before {
+  content: '+     ';
+}
+.accordion-container input[type=checkbox]:checked + label::before {
+  content: '-     ';
+}
+
+.shoppinglist {
+    display: flex;
+    align-items: center;
+    width: 400px;
+    height: 500px;
+    margin: 20px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    background-color: #feada6;
+    box-shadow: 1px 5px 6px rgba(0, 0, 0, 0.5);
+    border-radius: 16px;
+    
+   
+}
+.shoppinglist h1 {
+  margin-top: 20px ;
+}
+.shoppinglist .item {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0.5rem 0 0.5rem 0.5rem;
+  margin: 0.25rem 0;
+}
+ul {
+  width: 100%;
+  list-style: none;
+  padding: 0 0.25rem 0.25rem;
+}
+
+
+.item:first-child {
+  margin: 0;
+}
+
+.item input[type="checkbox"] {
+  text-align: center;
+  width: 0.75rem;
+  width: 18px;
+  min-width: 18px;
+  height: 0.75rem;
+  height: 18px;
+  min-height: 18px;
+  cursor: pointer;
+  margin-right: 0.5rem;
+}
+
+.item input[type="checkbox"]:focus + label {
+  text-decoration: underline;
+}
+
+.item > label {
+  font-size: 1rem;
+  flex-grow: 1;
+}
+
+.item svg {
+  width: 18px;
+  min-width: 18px;
+  height: 26px;
+  font-size: 1rem;
+  color: #013237; 
+  cursor: pointer;
+  padding: 0 20px;
+}
+
+.item svg:focus, 
+.item svg:hover {
+  color: aliceblue;
+  outline: none;
+}
+
+.addForm {
+ /*  width: 100%; */
+  display: flex;
+  justify-content: flex-end;
+  
+  margin: 0.5rem 0 0;
+  padding: 0 0.5rem 0.25rem;
+  border-bottom: 1px solid #eee;
+}
+
+
+
+.addForm input[type='text'] {
+  flex-grow: 1;
+  font-size: 1rem;
+  padding: 0.25rem;
+  border-radius: 0.25rem;
+  margin-right: 0.25rem;
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+
+
+footer {
+  text-align: center;
+  color: #013237;
+  font-family: 'ubuntu';
+  font-size: 1.5em;
+}
+
+
+/* @keyframes rotate {
+  100% {
+      background-position: 15% 50%;
+  }
+} */
