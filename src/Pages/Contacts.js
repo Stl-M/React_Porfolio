@@ -8,7 +8,7 @@ export default function Contacts() {
                   <div className='kard'>
                     <h2>Get in Touch</h2>
                     <p><IonIcons.IoIosCall /> +49 1522 546 2082 </p>
-                    <p><IonIcons.IoIosMailUnread /> stellanmungai@gmail.com </p>
+                    <p><IonIcons.IoIosMailUnread /> stellanmungai@gmail.com </p> 
                     <p><IonIcons.IoIosPin /> Germany </p>
                     <p><Link to='https://github.com/Stl-M' ><i class="fa-brands fa-github"></i>  GitHub</Link></p>
                     <p><Link to='https://www.linkedin.com/in/stella-mungai/'><i class="fa-brands fa-linkedin"></i>  Linkedin</Link></p> 

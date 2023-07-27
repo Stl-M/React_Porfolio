@@ -1,20 +1,37 @@
 .contact {
-    display: flex;
-    /* justify-content: center; */
+    background-color: #fbe9d7;
+    width: 100%;
+    height: auto;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    border-radius: 25px;
+    border: 2px solid white;
+    text-decoration: none;
+    color: #013237;
     align-items: center;
-    height: 400px;
-    margin: 20px 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.kard {
+    display: flex;
+    align-items: center;
+    width: 400px;
+    height: 500px;
+    margin: 20px;
     flex-direction: column;
     flex-wrap: wrap;
     box-sizing: border-box;
-    background-color: #fbe9d7;
+    background-color: #feada6;
     box-shadow: 1px 5px 6px rgba(0, 0, 0, 0.5);
     border-radius: 16px;
-    
 }
+
 .kard h2, p{
     padding: 20px;
 }
+
 
 
 
