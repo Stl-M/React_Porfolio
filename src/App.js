@@ -3,7 +3,7 @@ import {createBrowserRouter,
   createRoutesFromElements, 
   RouterProvider
 } from 'react-router-dom';
-import './App.css';
+
 
 
 //Pages
