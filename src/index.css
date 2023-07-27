@@ -11,6 +11,20 @@ body {
   align-items: center;
   text-align: center;
 }
+#root {
+  flex-grow: 1;
+/*   display: flex; */
+ /*  align-items: center; */
+/*   justify-content: center; */
+}
+
+
+main {
+  max-width: 1000px;
+  margin: 20px auto;
+  color: #013237;
+ 
+}
 
 button {
   border: 0;
@@ -20,62 +34,7 @@ button {
   cursor: pointer;
 }
 
-/* header {
-  align-items: center;
-  text-align: center;  
-}
-header nav {
-  display: flex;
-  text-align: center;
-  gap: 16px;
-  justify-content: flex-end;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-header nav h1 {
-  margin-right: auto;
-  border-bottom: 3px solid #e76268;
-  font-family: 'Ubuntu' ;
-  font-weight: 800;
-  font-size: 30px;
-  color: #013237;
-}
-header nav a{
-  text-decoration: none;
-  padding: 6px auto;  
-  border-radius: 1px;
-  color: #013237;
-  align-items: center;
-  font-family: 'ubuntu';
-  font-size: 1.5em;
-}
-header nav a.active {
-  border-bottom: 3px solid #e76268;
-} 
- */
 
-main {
-  max-width: 1000px;
-  
-  margin: 20px auto;
-  color: #013237;
- 
-}
-.mern-layout {
-  background-color: #f1f1f1;
-  padding: 20px 20px;
-  overflow: scroll;  
-}
-.mern-layout h2 {
-  color: #013237;
-  font-family: 'Ubuntu';
-}
-.mern-layout p {
-  text-align: center;
-  color: #013237;
-  font-family: 'Montserrat';
-
-}
 
 .about {
   background-color: #feada6;
@@ -101,20 +60,7 @@ main {
   font-family: 'Montserrat';
 }
 
-/* .mern-layout {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 400px;
-  margin: 20px 300px;
-  flex-direction: column;
-  flex-wrap: wrap;
-  box-sizing: border-box;
-  background-color: #feada6;
-  box-shadow: 1px 5px 6px rgba(0, 0, 0, 0.5);
-  border-radius: 16px;
-  
-} */
+
 .accordion-container{
   max-width: 800px;
   margin: 30px auto;
@@ -269,6 +215,49 @@ footer {
   font-family: 'ubuntu';
   font-size: 1.5em;
 }
+
+
+
+
+
+
+
+
+/* .mern-layout {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  margin: 20px 300px;
+  flex-direction: column;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  background-color: #feada6;
+  box-shadow: 1px 5px 6px rgba(0, 0, 0, 0.5);
+  border-radius: 16px;
+  
+} */
+
+
+
+/* .mern-layout {
+  background-color: #f1f1f1;
+  padding: 20px 20px;
+  overflow: scroll;  
+}
+.mern-layout h2 {
+  color: #013237;
+  font-family: 'Ubuntu';
+}
+.mern-layout p {
+  text-align: center;
+  color: #013237;
+  font-family: 'Montserrat';
+
+} */
+
+
+
 
 
 /* @keyframes rotate {

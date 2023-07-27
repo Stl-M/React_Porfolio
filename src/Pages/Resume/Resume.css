@@ -8,28 +8,40 @@
     text-decoration: none;
     color: #013237;
     align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .resume-layout h2 {
     margin-top: 20px;
 }
 
-.resume {
-    width: 90vw; 
+
+ .resume {
+    max-width: 800px;
+    /* width: 80%;   */
+   /* min-width: 450px; */
+    /* width: 80%; */
     margin: 5rem auto; 
     background-color: #FF90BB;
     border-radius: 25px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-    padding: 2.5rem 2rem;
-    width: 800px;
+    padding: 2.5rem 2rem; 
+    /* width: 800px; */
     display: grid;
+    display: flex;
+    flex-direction: column;
     gap: 1rem 2rem;
-} 
- 
+}   
+
 
 .box {
     padding: 1rem 1.5rem; 
     max-width: 700px; 
+    width: 80%;
+    min-width: 450px;
     border: 2px solid #eae6eb;
     margin-bottom: 1rem;
     border-radius: 0.25rem;
