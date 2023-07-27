@@ -3,7 +3,7 @@ import * as  FaIcons  from 'react-icons/fa'
 import AddItem from './AddItem';
 
 function ShoppingList() {
-    const [items, setItems] = useState(JSON.parse(localStorage.getItem('shoppinglist')));
+    const [items, setItems] = useState(JSON.parse(localStorage.getItem('shoppinglist')) || []);
     const [newItem, setNewItem] = useState('')
 
     const setAndSaveItems = (newItems) => {
